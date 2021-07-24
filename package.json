@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "server":"http-server -p 8080 -c-1 dist/weather-app"
+    "server": "ng build --prod && http-server -p 8080 -c-1 dist/weather-app"
   },
   "private": true,
   "dependencies": {
