@@ -16,13 +16,15 @@ import { environment } from '../environments/environment';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { HeaderComponent } from './header/header.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    WeatherComponent
+    WeatherComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +33,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatCardModule,
     MatIconModule,
     MatInputModule,
+    MatSnackBarModule,
+    MatButtonModule,
+    MatToolbarModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable
